@@ -23,7 +23,6 @@ const useStyles = makeStyles(landingPageStyle);
 const LandingPage = () => {
   const classes = useStyles();
 
-  const ctaSignup = [{ link: "signup", text: "Gå med" }];
   const ctaLogin = [{ link: "login", text: "Logga in" }];
 
   return (
@@ -40,19 +39,6 @@ const LandingPage = () => {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <Article title="Bli medlem" cta={ctaSignup}>
-            <p>
-              Nätverket Night of Passion är en exklusiv medlemsklubb. Vi tar
-              emot par som medlemmar som är seriösa och som vill bidra till en
-              bättre swingersvärld.
-            </p>
-            <p className={classes.description}>
-              Nedan kan ni ansöka om att gå med. För att bli medlemmar så krävs
-              det också att ni verifierar er som ett par.
-            </p>
-
-            <p className={classes.description}>Låt det roliga börja!</p>
-          </Article>
           <Article title="Logga in" cta={ctaLogin}>
             <p className={classes.description}>
               Har ni redan påbörjar er ansöka så kan ni istället logga in för

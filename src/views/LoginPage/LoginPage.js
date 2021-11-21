@@ -71,7 +71,7 @@ export default function LoginPage(/*props*/) {
           category: "Login",
           action: "Login success",
         });
-        history.push("/validation");
+        history.push("/profile");
       },
       (error) => {
         ReactGA.event({
